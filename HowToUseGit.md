@@ -2,16 +2,27 @@ github desktop
 
 https://desktop.github.com/
 
-Ubuntu git 설치
+----
 
+## Ubuntu git 설치
+
+```sh
 sudo apt-get install git   
-CentOS git 설치
+```
 
+----
+
+## CentOS git 설치
+```sh
 su
 
 yum install git
-git 사용법
+```
 
+----
+
+## git 사용법
+```sh
 mkdir ~/workspace
 
 cd ~/workspace
@@ -39,16 +50,29 @@ git commit -m "메세지"
 git status
 
 git push -u origin master     # 파일 업데이트
+```
+
+-----
 origin url 설정이 잘못되서 origin을 삭제(수정)해야할 경우
 
+```sh
 git remote rm origin
 
 git remote rename origin origin_re
-git push error
+```
 
-url return error
+----
 
+## git push error
+
+### url return error
+
+```sh
 git remote set-url origin git@github.com:kowonsik/레포지터리이름.git
-public key error 참고링크
+```
+
+### public key error 참고링크
 
 http://uiandwe.tistory.com/992
+
+----
